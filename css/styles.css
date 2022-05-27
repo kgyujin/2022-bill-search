@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  overflow: hidden;
   position: relative;
   width: 100%;
   height: auto;
@@ -13,7 +14,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  overflow: hidden;
 }
 
 @media (min-width: 992px) {
@@ -24,104 +24,111 @@ body {
 }
 
 a.team {
+  padding-top: -15rem;
+  margin: 5px 16px 0 340px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.25rem;
   font-weight: 700;
   text-decoration: none;
   white-space: nowarp;
-  margin: 5px 16px 0 340px;
-  padding-top: -15rem;
 }
 
 .navbar {
-  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background-color: transparent;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 h1.system_title {
   margin: 400px 0 0 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
   text-align: center;
   font-size: 104px;
   font-weight: 500;
-  letter-spacing: 12.8px;
-  line-height: 104px;
   text-decoration: none solid rgb(33, 37, 41);
   text-transform: uppercase;
+  letter-spacing: 12.8px;
+  line-height: 104px;
   word-spacing: 0px;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2.system_text {
   text-align: center;
   font-size: 20px;
   font-weight: 500;
+  text-decoration: none solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   letter-spacing: 1px;
   line-height: 24px;
-  text-decoration: none solid rgba(255, 255, 255, 0.5);
   word-spacing: 0px;
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5);
 
 }
 
 div.input_group {
-  margin: 48px 0 0 552px;
-  height: 60px;
-  width: 705px;
-  position: relative;
   display: flex;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin: 48px 0 0 552px;
   flex-wrap: wrap;
   align-items: stretch;
-  width: 100%;
 }
 
 input.form_control {
-  border: 1px solid #CED4DA;
-  padding: 6px 12px 6px 12px;
+  width: 685px;
   min-height: auto;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
+  padding: 6px 12px 6px 12px;
+  border: 1px solid #CED4DA;
+  border-radius: 3px;
   background-color: #fff;
   background-clip: padding-box;
-  border-radius: 3px;
-  width: 685px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212529;
+  line-height: 1.5;
 }
 
 button.btn {
+  padding: 1.25rem 2rem;
   margin-left: -1px;
+  border: 0;
+  border-radius: 3px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgb(0 0 0 / 10%);
-  padding: 1.25rem 2rem;
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
-  color: #fff;
   background-color: #64a19d;
   text-align: center;
-  border-radius: 3px;
+  font-size: 80%;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.15rem;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgb(0 0 0 / 10%);
 }
 
-button.btn:hover{
+button.btn:hover {
   cursor: pointer;
 }
 
-button.btn:active{
+button.btn:active {
   background-color: #50817e;
   transition: 0.3s;
 }
 
-button.btn::after{
+button.btn::after {
   background-color: #50817e;
+}
+
+div.list {
+  overflow: auto;
+  width: 70%;
+  height: 650px;
+  margin: 80px auto;
+  background-color: white;
 }
