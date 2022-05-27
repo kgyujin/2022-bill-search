@@ -1,0 +1,127 @@
+html {
+  scroll-padding-top: calc(4.5rem - 1px);
+  height: 100vh;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35em;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+}
+
+a.team {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowarp;
+  margin: 5px 16px 0 340px;
+  padding-top: -15rem;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+}
+
+h1.system_title {
+  margin: 400px 0 0 0;
+  text-align: center;
+  font-size: 104px;
+  font-weight: 500;
+  letter-spacing: 12.8px;
+  line-height: 104px;
+  text-decoration: none solid rgb(33, 37, 41);
+  text-transform: uppercase;
+  word-spacing: 0px;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+h2.system_text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-decoration: none solid rgba(255, 255, 255, 0.5);
+  word-spacing: 0px;
+  --bs-text-opacity: 1;
+  color: rgba(255, 255, 255, 0.5);
+
+}
+
+div.input_group {
+  margin: 48px 0 0 552px;
+  height: 60px;
+  width: 705px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+input.form_control {
+  border: 1px solid #CED4DA;
+  padding: 6px 12px 6px 12px;
+  min-height: auto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 3px;
+  width: 685px;
+}
+
+button.btn {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgb(0 0 0 / 10%);
+  padding: 1.25rem 2rem;
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+  color: #fff;
+  background-color: #64a19d;
+  text-align: center;
+  border-radius: 3px;
+}
+
+button.btn:hover{
+  cursor: pointer;
+}
+
+button.btn:active{
+  background-color: #50817e;
+  transition: 0.3s;
+}
+
+button.btn::after{
+  background-color: #50817e;
+}
