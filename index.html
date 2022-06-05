@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- Script -->
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -30,9 +32,9 @@
                 <h2 class="system_text">원하는 내용을 검색하시오</h2>
                 <div class="input_group">
                     <input type="text" class="form_control" placeholder="법안을 입력하세요..." aria-label="법안을 입력하세요..."
-                        aria-describedby="button_search" />
+                        aria-describedby="button_search" id="text"/>
                     <button class="btn" id="button_search" type="button"
-                        onclick="location.href ='bill-list.html'">검색</button>
+                        onclick="searchResult()">검색</button>
                 </div>
             </div>
         </div>

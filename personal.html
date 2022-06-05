@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>인적사항</title>
+    <title>의원정보</title>
     <link rel="icon" type="image/x-icon" href="assets/gavel.png" />
     <!-- icons (free version) -->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -25,11 +25,74 @@
     </nav>
     <section>
         <div class="content">
-            <div class="name"></div>
-            <div class="cname"></div>
-            <div class="party"></div>
-            <div class="birthday"></div>
+            <table>
+                <tr>
+                    <td class="name">이름</td>
+                    <td class="cname">한자 이름</td>
+                </tr>
+                <tr>
+                    <td class="party">소속당</td>
+                    <td class="birthday">생년월일</td>
+                </tr>
+            </table>
+            <hr>
+            <div class="initiative">
+                <pre>
+                    테스트
+                    1
+                    2
+                    3
+                    4
+                    5
+
+                </pre>
+            </div>
         </div>
     </section>
 </body>
+
+<style>
+    div.content{
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        left: 15%;
+        background-color: white;
+        border-radius: 10px;
+        overflow: auto;
+    }
+
+    table{
+        width: 100%;
+        border-spacing: 20px;
+    }
+
+    td.name{
+        text-align: right;
+        font-weight: 500;
+        font-size: 50px;
+    }
+
+    td.cname{
+        font-weight: 500;
+        font-size: 50px;
+    }
+
+    td.party{
+        text-align: right;
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    td.birthday{
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    div.initiative{
+        line-height: 30px;
+        font-size: 16px;
+    }
+</style>
+
 </html>

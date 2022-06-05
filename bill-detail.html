@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>인적사항</title>
+    <title>법안정보</title>
     <link rel="icon" type="image/x-icon" href="assets/gavel.png" />
     <!-- icons (free version) -->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -25,18 +25,70 @@
     </nav>
     <section>
         <div class="content">
-            <h1 class="bill_title"></h1>
-            <div class="date"></div>
+            <h1 class="bill_title">bill_title</h1>
+            <div class="date">date</div>
             <div class="person">
-                <div class="person_delegate"></div>
-                <div class="person_co"></div>
+                <div class="person_delegate">person_delegate</div>
+                <div class="person_co">person_co</div>
             </div>
-            <div class="bill_detail"></div>
+            <hr>
+            <div class="bill_detail">bill_detail</div>
+            <hr>
             <div class="display">
-                <div class="display_wordcloud"></div>
-                <div class="display_piechart"></div>
+                <div class="display_wordcloud">display_wordcloud</div>
+                <div class="display_piechart">display_piechart</div>
             </div>
         </div>
     </section>
 </body>
+
+<style>
+    h1.bill_title{
+        text-align: center;
+        font-weight: 500;
+        font-size: 50px;
+    }
+
+    div.content{
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        left: 15%;
+        background-color: white;
+        border-radius: 10px;
+        line-height: 30px;
+        padding: 0 10px 0 10px;
+    }
+
+    div.date{
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    div.person_delegate{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    div.person_co{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    div.bill_detail{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    div.display_wordcloud{
+        background-color: violet;
+    }
+
+    div.display_piechart{
+        background-color: purple;
+    }
+    
+</style>
+
 </html>
